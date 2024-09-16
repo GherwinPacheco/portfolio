@@ -2,16 +2,127 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Fade in from the top */
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes fadeOutToTop {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Fade in from the left */
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutToLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+/* Fade in from the bottom */
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutToBottom {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* Fade in from the right */
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutToRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+/* Apply animation classes */
+.fade-in-from-top {
+  animation: fadeInFromTop 1s forwards;
+}
+
+.fade-out-to-top {
+  animation: fadeOutToTop 1s forwards;
+}
+
+.fade-in-from-left {
+  animation: fadeInFromLeft 1s forwards;
+}
+
+.fade-out-to-left {
+  animation: fadeOutToLeft 1s forwards;
+}
+
+.fade-in-from-bottom {
+  animation: fadeInFromBottom 1s forwards;
+}
+
+.fade-out-to-bottom {
+  animation: fadeOutToBottom 1s forwards;
+}
+
+.fade-in-from-right {
+  animation: fadeInFromRight 1s forwards;
+}
+
+.fade-out-to-right {
+  animation: fadeOutToRight 1s forwards;
 }
