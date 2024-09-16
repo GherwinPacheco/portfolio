@@ -1,15 +1,16 @@
 import React, { useEffect, useState, useRef } from 'react';
 import '../index.css'; // Import the CSS file where keyframes are defined
 
-const ScrollFade = ({ children, direction = 'left', className = '' }) => {
+const ScrollFade = ({ children, direction = 'left', className = ''}) => {
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
+
 
   const handleScroll = () => {
     if (containerRef.current) {
       const rect = containerRef.current.getBoundingClientRect();
       const viewHeight = window.innerHeight;
-      const isInView = rect.top <= viewHeight && rect.bottom >= 0;
+      const isInView = rect.top <= viewHeight;
       setIsVisible(isInView);
     }
   };
@@ -19,6 +20,10 @@ const ScrollFade = ({ children, direction = 'left', className = '' }) => {
     handleScroll(); // Check visibility on mount
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+
+  
+  
 
   // Determine the animation classes based on direction and visibility
   const animationClass = isVisible
@@ -42,12 +47,15 @@ const ScrollFade = ({ children, direction = 'left', className = '' }) => {
     : '';
 
   return (
-    <div
-      ref={containerRef}
-      className={`transition-opacity duration-1000 ${animationClass} ${className}`}
-    >
-      {children}
-    </div>
+    
+      <div
+        ref={containerRef}
+        className={`transition-opacity duration-1000 ${animationClass} ${className}`}
+      >
+        {children}
+      </div>
+    
+    
   );
 };
 
