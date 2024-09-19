@@ -7,13 +7,14 @@ const Tools = (props) => {
         duration-300 
         rounded-xl
         border
-        m-3
+        mx-3
         p-3
+        bg-white
         
     `;
     const hoverEffect = hover ?
-        'bg-white shadow-lg' :
-        'bg-transparent';
+        'shadow-lg mx-5' : //hovered
+        '';   //not hovered
     
     return (
         <div

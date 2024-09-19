@@ -2,7 +2,7 @@ export const Blank = () => {
   return (
     <div className="">
 
-      a
+      lmao
     </div>
   );
 };
