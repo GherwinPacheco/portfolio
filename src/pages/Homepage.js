@@ -1,4 +1,7 @@
-export const Home = () => {
+import ScrollFade from '../components/ScrollFade';
+import Tools from '../components/Tools';
+
+export const Homepage = () => {
     const tools = [
         {tool_name: 'HTML5', src: './img/html5.png'},
         {tool_name: 'CSS', src: './img/css.png'},
@@ -6,6 +9,7 @@ export const Home = () => {
         {tool_name: 'PHP', src: './img/php.png'},
         {tool_name: 'React', src: './img/react.png'}
     ];
+
   return (
     <div className="">
 
