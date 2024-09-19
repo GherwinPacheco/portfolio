@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
 
 body {
   font-family: "Poppins", sans-serif;
+  
 }
 
 h1, h2, h3, h4, h5, h6, b {
@@ -113,33 +115,33 @@ p {
 
 /* Apply animation classes */
 .fade-in-from-top {
-  animation: fadeInFromTop 0.5s forwards;
+  animation: fadeInFromTop 1s forwards;
 }
 
 .fade-out-to-top {
-  animation: fadeOutToTop 0.5s forwards;
+  animation: fadeOutToTop 1s forwards;
 }
 
 .fade-in-from-left {
-  animation: fadeInFromLeft 0.5s forwards;
+  animation: fadeInFromLeft 1s forwards;
 }
 
 .fade-out-to-left {
-  animation: fadeOutToLeft 0.5s forwards;
+  animation: fadeOutToLeft 1s forwards;
 }
 
 .fade-in-from-bottom {
-  animation: fadeInFromBottom 0.5s forwards;
+  animation: fadeInFromBottom 1s forwards;
 }
 
 .fade-out-to-bottom {
-  animation: fadeOutToBottom 0.5s forwards;
+  animation: fadeOutToBottom 1s forwards;
 }
 
 .fade-in-from-right {
-  animation: fadeInFromRight 0.5s forwards;
+  animation: fadeInFromRight 1s forwards;
 }
 
 .fade-out-to-right {
-  animation: fadeOutToRight 0.5s forwards;
+  animation: fadeOutToRight 1s forwards;
 }

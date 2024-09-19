@@ -1,7 +1,33 @@
 import React, { useEffect, useState, useRef } from 'react';
 import '../index.css'; // Import the CSS file where keyframes are defined
 
-const ScrollFade = ({ children, direction = 'left', className = '', delay = 0}) => {
+
+export const Fade = ({ children, direction = 'left', className = ''}) => {
+
+  // Determine the animation classes based on direction and visibility
+  const animationClass = 
+    direction === 'top'
+      ? 'fade-in-from-top'
+      : direction === 'left'
+      ? 'fade-in-from-left'
+      : direction === 'bottom'
+      ? 'fade-in-from-bottom'
+      : direction === 'right'
+      ? 'fade-in-from-right'
+      : '';
+
+  return (
+      <div
+        className={`transition-opacity duration-1000 ${animationClass} ${className}`}
+      >
+        {children}
+      </div>
+  );
+};
+
+
+
+export const ScrollFade = ({ children, direction = 'left', className = '', delay = 0}) => {
   const [isVisible, setIsVisible] = useState(true);
   const [shouldRender, setShouldRender] = useState(false);
   const renderDelay = delay * 1000;
@@ -73,4 +99,3 @@ const ScrollFade = ({ children, direction = 'left', className = '', delay = 0}) 
   );
 };
 
-export default ScrollFade;
