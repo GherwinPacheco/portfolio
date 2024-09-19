@@ -3,7 +3,7 @@ import ScrollFade from '../components/ScrollFade';
 const Homepage = () => {
 
   return (
-    <div className="bg-[url('./img/background.png')]">
+    <div className="" style={{ backgroundImage: "url('./img/background.jpg')" }}>
 
     </div>
   );
