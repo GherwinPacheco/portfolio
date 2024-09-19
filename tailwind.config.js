@@ -2,7 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#4A90E2',    // Vibrant Blue
+        secondary: '#50E3C2',  // Soft Turquoise
+        accent: '#F5A623',     // Warm Orange
+        background: '#F5F7FA', // Light Gray
+        textcolor: '#4A4A4A',  // Dark Gray
+      },
+    },
   },
   plugins: [
     function ({ addUtilities }) {
