@@ -17,7 +17,7 @@ const Homepage = () => {
         className="
           h-[50vh] lg:h-[92vh]
           bg-cover bg-center bg-no-repeat 
-          flex items-center justify-center text-white p-10 lg:p-20"
+          flex items-center justify-center text-white p-5 lg:p-20"
         style={{ backgroundImage: "url('./img/background.jpg')" }}
       >
         <Fade className='flex-[2] lg:flex-1' direction='left'>
