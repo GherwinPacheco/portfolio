@@ -1,23 +1,23 @@
-export const Tools = [
+export const Skills = [
     {
         name: 'HTML5', 
-        src: './img/html5.png'
+        image: 'html5.png'
     },
     {
         name: 'CSS', 
-        src: './img/css.png'
+        image: 'css.png'
     },
     {
         name: 'Javascript', 
-        src: './img/js.png'
+        image: 'js.png'
     },
     {
         name: 'PHP', 
-        src: './img/php.png'
+        image: 'php.png'
     },
     {
         name: 'React', 
-        src: './img/react.png'
+        image: 'react.png'
     }
 ];
 

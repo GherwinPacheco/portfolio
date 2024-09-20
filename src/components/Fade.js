@@ -2,23 +2,15 @@ import React, { useEffect, useState, useRef } from 'react';
 import '../index.css'; // Import the CSS file where keyframes are defined
 
 
-export const Fade = ({ children, direction = 'left', className = ''}) => {
+export const Fade = ({ children, direction = 'left', className = '', ...rest}) => {
 
   // Determine the animation classes based on direction and visibility
-  const animationClass = 
-    direction === 'top'
-      ? 'fade-in-from-top'
-      : direction === 'left'
-      ? 'fade-in-from-left'
-      : direction === 'bottom'
-      ? 'fade-in-from-bottom'
-      : direction === 'right'
-      ? 'fade-in-from-right'
-      : '';
+  const animationClass = `fade-in-from-${direction}`;
 
   return (
       <div
         className={`transition-opacity duration-1000 ${animationClass} ${className}`}
+        {...rest}
       >
         {children}
       </div>
@@ -27,7 +19,7 @@ export const Fade = ({ children, direction = 'left', className = ''}) => {
 
 
 
-export const ScrollFade = ({ children, direction = 'left', className = '', delay = 0}) => {
+export const ScrollFade = ({ children, direction = 'left', className = '', delay = 0, ...rest}) => {
   const [isVisible, setIsVisible] = useState(true);
   const [shouldRender, setShouldRender] = useState(false);
   const renderDelay = delay * 1000;
@@ -51,11 +43,14 @@ export const ScrollFade = ({ children, direction = 'left', className = '', delay
 
   useEffect(() => {
     if(isVisible){
-      const timer = setInterval(() => {
+      const timer = setTimeout(() => {
         setShouldRender(true);
       }, renderDelay);
   
-      return () => clearInterval(timer);
+      return () => clearTimeout(timer);
+    }
+    else{
+      setShouldRender(false);
     }
   }, [isVisible]);
 
@@ -65,35 +60,21 @@ export const ScrollFade = ({ children, direction = 'left', className = '', delay
 
   // Determine the animation classes based on direction and visibility
   const animationClass = isVisible
-    ? direction === 'top'
-      ? 'fade-in-from-top'
-      : direction === 'left'
-      ? 'fade-in-from-left'
-      : direction === 'bottom'
-      ? 'fade-in-from-bottom'
-      : direction === 'right'
-      ? 'fade-in-from-right'
-      : ''
-    : direction === 'top'
-    ? 'fade-out-to-top'
-    : direction === 'left'
-    ? 'fade-out-to-left'
-    : direction === 'bottom'
-    ? 'fade-out-to-bottom'
-    : direction === 'right'
-    ? 'fade-out-to-right'
-    : '';
+    ? `fade-in-from-${direction}` 
+    : `fade-out-from-${direction}`;
 
   return (
-    shouldRender && (
-      <div
-        ref={containerRef}
-        className={`transition-opacity duration-1000 ${animationClass} ${className}`}
+    <div ref={containerRef} className={className}>
+      {shouldRender && (
+        <div
+        className={`transition-opacity duration-1000 ${animationClass}`}
+        {...rest}
       >
         {children}
       </div>
-    )
+      )}
       
+    </div>
     
     
   );

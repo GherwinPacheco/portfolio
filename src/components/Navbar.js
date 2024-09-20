@@ -1,17 +1,28 @@
-import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import Button from '../components/Button';
 
+const NavbarButton = ({children, className, ...rest}) => {
+    const defaultClassName = 'm-3 mx-5 duration-200 hover:text-primary cursor-pointer';
+
+    return (
+        <ScrollLink className={`${defaultClassName} ${className}`} {...rest} smooth={true} duration={500}>{children}</ScrollLink>
+    );
+    
+}
+
+
+
+
 const Navbar = () => {
-    const optionClassName = 'm-3 mx-5 duration-200 hover:text-primary';
-    const sidebarOptions = [
-        {name: 'HOME', className: optionClassName, to: '/'},
-        {name: 'ABOUT', className: optionClassName, to: '#about'},
-        {name: 'PROJECTS', className: optionClassName, to: '#projects'},
-        {name: 'CONTACT', className: optionClassName, to: '#contact'}
+    const navbarOptions = [
+        {name: 'HOME', to: '/'},
+        {name: 'ABOUT', to: 'about'},
+        {name: 'PROJECTS', to: 'projects'},
+        {name: 'CONTACT', to: 'contact'}
     ];
 
     return (
@@ -22,8 +33,8 @@ const Navbar = () => {
             </div>
 
             <div className='hidden md:flex content-center justify-end flex-[2]'>
-                {sidebarOptions.map(({name, ...rest}, index) => (
-                    <Link key={index} {...rest}>{name}</Link>
+                {navbarOptions.map((item, index) => (
+                    <NavbarButton key={index} to={item.to}>{item.name}</NavbarButton>
                 ))}
             </div>
 

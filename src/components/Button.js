@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-const Button = ({children, className, onClick = () => {}}) => {
+const Button = ({children, className, onClick = () => {}, ...rest}) => {
 
     const [isClicked, setIsClicked] = useState(false);
     const defaultClassName = `
@@ -24,7 +24,9 @@ const Button = ({children, className, onClick = () => {}}) => {
             onClick={() => {
                 handleClick();
                 onClick();
-            }}>
+            }}
+            {...rest}
+        >
 
             {children}
         </button>
