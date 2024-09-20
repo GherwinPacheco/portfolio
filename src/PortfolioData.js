@@ -1,24 +1,57 @@
 export const Skills = [
     {
         name: 'HTML5', 
-        image: 'html5.png'
+        image: 'html5.svg'
     },
     {
         name: 'CSS', 
-        image: 'css.png'
+        image: 'css.svg'
     },
     {
         name: 'Javascript', 
-        image: 'js.png'
+        image: 'javascript.svg'
     },
     {
         name: 'PHP', 
-        image: 'php.png'
+        image: 'php.svg'
+    },
+    {
+        name: 'Bootstrap', 
+        image: 'bootstrap.svg'
+    },
+    {
+        name: 'jQuery', 
+        image: 'jquery.svg'
     },
     {
         name: 'React', 
-        image: 'react.png'
-    }
+        image: 'react.svg'
+    },
+    {
+        name: 'Tailwind', 
+        image: 'tailwind.svg'
+    },
+    {
+        name: 'MySQL', 
+        image: 'mysql.svg'
+    },
+    {
+        name: 'XAMPP', 
+        image: 'xampp.svg'
+    },
+    {
+        name: 'Postman', 
+        image: 'postman.svg'
+    },
+    {
+        name: 'Git', 
+        image: 'git.svg'
+    },
+    {
+        name: 'VSCode', 
+        image: 'vscode.svg'
+    },
+    
 ];
 
 export const Projects = [

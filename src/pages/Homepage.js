@@ -33,34 +33,45 @@ const Homepage = () => {
         </Fade>
       </section>
 
+
+
+
       <section id="about" 
         className='
-          lg:h-[100vh] 
-          p-10 lg:p-20'
+          h-[160vh] lg:h-[100vh]
+          p-5 pt-10'
       >
-        <h1 className="text-center text-2xl lg:text-3xl font-semibold mb-16">About Me</h1>
+        <h1 className="text-primary text-center text-2xl lg:text-4xl font-semibold mb-3">About Me</h1>
+        <p className='text-center text-sm lg:text-lg mb-10 lg:mb-32'>{lorem.generateWords(10)}</p>
 
         <div className='block md:flex'>
-          <div className='flex-1 mb-20 lg:mb-0 md:mr-20'>
+          <div className='flex-1 mb-20 lg:mb-0 md:mr-20 lg:pl-5'>
             <ScrollFade direction='left'><h1 className='text-xl lg:text-2xl font-semibold mb-5'>Get to know me</h1></ScrollFade>
-            <ScrollFade direction='left' delay={0.3}><p className='indent-10 text-sm lg:text-base text-justify mb-5'>{lorem.generateParagraphs(1)}.</p></ScrollFade>
+            <ScrollFade direction='left'><p className='indent-10 text-sm lg:text-base text-justify mb-5'>{lorem.generateSentences(3)}.</p></ScrollFade>
           </div>
 
-          <div className='flex-1'>
-            <h1 className='text-xl lg:text-2xl font-semibold mb-5 w-[100%]'>My Skills</h1>
-            {Skills.map((item, index) => {
-              return (
-                <ScrollFade className='inline-block' direction='top' key={index} delay={index * 0.3}>
-                  <Skill className='m-2' image={item.image}>{item.name}</Skill>
-                </ScrollFade>
-              );
-            })}
+          <div className='flex-1 lg:flex-[2]'>
+            <h1 className='text-xl lg:text-2xl text-center lg:text-left font-semibold mb-5 w-[100%]'>The Technologies I Use</h1>
+
+            <div className='flex flex-wrap justify-center lg:justify-start'>
+              {Skills.map((item, index) => {
+                return (
+                  <ScrollFade direction='top' key={index} delay={index * 0.05}>
+                    <Skill className='m-2' image={item.image}>{item.name}</Skill>
+                  </ScrollFade>
+                );
+              })}
+            </div>
+            
           </div>
         </div>
         
         
+        
 
       </section>
+
+      <section id="projects" className='h-[100vh] bg-white'></section>
       
     </div>
     
