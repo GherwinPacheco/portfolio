@@ -15,7 +15,7 @@ const Skill = ({children, image, className, ...rest}) => {
             onMouseLeave={() => setIsHovered(false)}
             {...rest}
         >
-            <img className='w-8 h-8 inline mr-3' src={`../img/${image}`}/>
+            <img className='w-8 h-8 inline mr-3' src={`/img/${image}`}/>
             {children}
         </div>
     );

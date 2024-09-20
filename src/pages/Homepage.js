@@ -24,7 +24,7 @@ const Homepage = () => {
           <h1 className='text-2xl lg:text-5xl font-semibold mb-2'>Hey, I'm <br/> Gherwin Pacheco</h1>
           <p className='text-sm lg:text-base text-justify mb-5'>{lorem.generateWords(10)}.</p>
           <ScrollLink to="projects" smooth={true} duration={500}>
-            <Button className="bg-accent">sss</Button>
+            <Button className="bg-accent">Projects</Button>
           </ScrollLink>
         </Fade>
 
