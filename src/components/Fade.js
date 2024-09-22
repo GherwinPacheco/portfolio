@@ -59,20 +59,18 @@ export const ScrollFade = ({ children, direction = 'left', className = '', delay
   
 
   // Determine the animation classes based on direction and visibility
-  const animationClass = isVisible
-    ? `fade-in-from-${direction}` 
-    : `fade-out-from-${direction}`;
+  const animationClass = (isVisible && shouldRender)
+    ? `transition-opacity duration-1000  fade-in-from-${direction}` 
+    : `transition-opacity duration-1000  fade-out-from-${direction}`;
 
   return (
     <div ref={containerRef} className={className}>
-      {shouldRender && (
-        <div
-        className={`transition-opacity duration-1000 ${animationClass}`}
+      <div
+        className={`opacity-0 ${animationClass}`}
         {...rest}
       >
         {children}
       </div>
-      )}
       
     </div>
     
