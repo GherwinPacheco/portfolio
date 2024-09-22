@@ -5,6 +5,8 @@ import { LoremIpsum } from 'lorem-ipsum';
 import { Link as ScrollLink } from 'react-scroll';
 import {Skills, Projects} from '../PortfolioData';
 
+import backgroundImg from './img/background.jpg';
+
 
 
 const Homepage = () => {
@@ -18,7 +20,7 @@ const Homepage = () => {
           h-[50vh] lg:h-[92vh]
           bg-cover bg-center bg-no-repeat 
           flex items-center justify-center text-white p-5 lg:p-20"
-        style={{ backgroundImage: "url('./img/background.jpg')" }}
+        style={{ backgroundImage: `url(${backgroundImg})` }}
       >
         <Fade className='flex-[2] lg:flex-1' direction='left'>
           <h1 className='text-2xl lg:text-5xl font-semibold mb-2'>Hey, I'm <br/> Gherwin Pacheco</h1>
