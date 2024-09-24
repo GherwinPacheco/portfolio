@@ -1,6 +1,7 @@
 import {Fade, ScrollFade} from '../components/Fade';
 import Button from '../components/Button';
 import Skill from '../components/Skill';
+import { SHText, HText, LHText, PText } from '../components/ResponsiveText';
 import { LoremIpsum } from 'lorem-ipsum';
 import { Link as ScrollLink } from 'react-scroll';
 import {Skills, Projects} from '../PortfolioData';
@@ -25,10 +26,10 @@ const Homepage = () => {
         style={{ backgroundImage: `url(${introBackground})` }}
       >
         <Fade className='flex-1' direction='left'>
-          <h1 className='text-lg sm:text-xl lg:text-4xl font-semibold mb-2'>Hey, I'm <br/> Gherwin Pacheco</h1>
-          <p className='text-xs sm:text-base text-justify mb-5'>{lorem.generateWords(10)}.</p>
+          <HText className='mb-2'>Hey, I'm <br/> Gherwin Pacheco</HText>
+          <PText className='text-justify mb-5'>Building dynamic and responsive web solutions.</PText>
           <ScrollLink to="projects" smooth={true} duration={500}>
-            <Button className="bg-accent text-xs sm:text-base">Projects</Button>
+            <Button className="bg-accent"><PText>Projects</PText></Button>
           </ScrollLink>
         </Fade>
 
@@ -40,31 +41,31 @@ const Homepage = () => {
 
 
 
-      <section id="about" className='p-5 pt-10'>
-        <h1 className="text-primary text-center text-xl sm:text-3xl font-semibold mb-3">About Me</h1>
-        <p className='text-center text-xs sm:text-base mb-10'>{lorem.generateWords(10)}</p>
+      <section id="about" className='p-5 pt-10 min-h-[100vh]'>
+        <HText className="text-primary text-center mb-3">Get to Know Me</HText>
+        <PText className='text-center text-bodytext mb-16'>{lorem.generateWords(10)}</PText>
 
-        <div className='flex items-center mb-10'>
-          <div className='flex-1 pr-10 lg:p-5'>
-            <ScrollFade direction='left'><h1 className='text-md md:text-xl font-semibold mb-5'>Get to know me</h1></ScrollFade>
-            <ScrollFade direction='left'><p className='indent-10 text-xs sm:text-base text-justify mb-5'>{lorem.generateSentences(3)}.</p></ScrollFade>
-          </div>
+        <div className='flex items-center mb-16'>
+          <ScrollFade direction='right' className='flex-[1.5] md:flex-1 pr-8 md:pl-10'>
+            <SHText className='mb-2'>About Me</SHText>
+            <PText className='indent-8 text-justify text-bodytext mb-5'>
+              I'm a web developer with a strong foundation in both front-end and back-end technologies. I focus on creating responsive, user-friendly websites using React, JavaScript, and PHP. I'm eager to apply my skills and take on new challenges to build efficient and scalable solutions.
+            </PText>
+          </ScrollFade>
 
-          <div className='flex-1'>
-            <ScrollFade direction='right'>
-              <img src={userImg} className='mx-auto w-[80%] h-[80%] md:w-[55%] md:h-[55%]'/>
-            </ScrollFade>
-          </div>
+          <ScrollFade direction='left' className='flex-1'>
+            <img src={userImg} className='mx-auto w-[100%] h-[100%] sm:w-[80%] sm:h-[80%] md:w-[50%] md:h-[50%]'/>
+          </ScrollFade>
         </div>
 
         <div className='block w-[100%] lg:w-[70%] mx-auto'>
-          <h1 className='text-xl lg:text-2xl text-center font-semibold mb-5 w-[100%]'>The Technologies I Use</h1>
+          <SHText className='text-center mb-5 w-[100%]'>The Technologies I Use</SHText>
 
           <div className='grid grid-cols-3 lg:grid-cols-4 gap-2'>
             {Skills.map((item, index) => {
               return (
-                <ScrollFade className="col-span-1 flex justify-center" direction='top' key={index} delay={index * 0.05}>
-                  <Skill className='text-xs sm:text-sm md:text-base' image={item.image} imageClassName='w-5 h-5 lg:w-8 lg:h-8'>{item.name}</Skill>
+                <ScrollFade className="col-span-1 sm:px-5" direction='top' key={index} delay={index * 0.03}>
+                  <Skill className='text-xs sm:text-sm md:text-base w-[100%]' image={item.image}>{item.name}</Skill>
                 </ScrollFade>
               );
             })}
@@ -77,7 +78,7 @@ const Homepage = () => {
 
       </section>
 
-      <section id="projects" className='h-[100vh] bg-white'></section>
+      <section id="projects" className='h-[100vh] bg-white'>Wala pa nakalagay</section>
       
     </div>
     

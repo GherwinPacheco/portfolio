@@ -27,7 +27,6 @@ const Button = ({children, className, onClick = () => {}, ...rest}) => {
             }}
             {...rest}
         >
-
             {children}
         </button>
     );
