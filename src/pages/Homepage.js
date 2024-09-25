@@ -1,7 +1,7 @@
 import {Fade, ScrollFade} from '../components/Fade';
 import Button from '../components/Button';
 import Skill from '../components/Skill';
-import { SHText, HText, LHText, PText } from '../components/ResponsiveText';
+import { HText, PText } from '../components/ResponsiveText';
 import { LoremIpsum } from 'lorem-ipsum';
 import { Link as ScrollLink } from 'react-scroll';
 import {Skills, Projects} from '../PortfolioData';
@@ -25,29 +25,30 @@ const Homepage = () => {
           flex items-center justify-center text-white p-5 lg:p-20"
         style={{ backgroundImage: `url(${introBackground})` }}
       >
-        <Fade className='flex-1' direction='left'>
-          <HText className='mb-2'>Hey, I'm <br/> Gherwin Pacheco</HText>
-          <PText className='text-justify mb-5'>Building dynamic and responsive web solutions.</PText>
+        <Fade className='flex-[1.5]' direction='left'>
+          <HText size='lg' className='mb-2'>Hey, I'm <br/> Gherwin Pacheco</HText>
+          <PText className='mb-5'>Building dynamic and responsive web solutions.</PText>
+          
           <ScrollLink to="projects" smooth={true} duration={500}>
             <Button className="bg-accent"><PText>Projects</PText></Button>
           </ScrollLink>
         </Fade>
 
         <Fade className='flex-1' direction='right'>
-          <img className='mx-auto w-[50%]' src={introIcon} />
+          <img className='mx-auto w-[70%]' src={introIcon} />
         </Fade>
       </section>
 
 
 
 
-      <section id="about" className='p-5 pt-10 min-h-[100vh]'>
+      <section id="about" className='p-5 pt-10 min-h-[100vh] mb-10 lg:mb-16'>
         <HText className="text-primary text-center mb-3">Get to Know Me</HText>
-        <PText className='text-center text-bodytext mb-16'>{lorem.generateWords(10)}</PText>
+        <PText className='text-center text-bodytext mb-10 lg:mb-16'>{lorem.generateWords(10)}</PText>
 
-        <div className='flex items-center mb-16'>
+        <div className='flex items-center mb-10 lg:mb-16'>
           <ScrollFade direction='right' className='flex-[1.5] md:flex-1 pr-8 md:pl-10'>
-            <SHText className='mb-2'>About Me</SHText>
+            <HText className='mb-2'>About Me</HText>
             <PText className='indent-8 text-justify text-bodytext mb-5'>
               I'm a web developer with a strong foundation in both front-end and back-end technologies. I focus on creating responsive, user-friendly websites using React, JavaScript, and PHP. I'm eager to apply my skills and take on new challenges to build efficient and scalable solutions.
             </PText>
@@ -59,7 +60,7 @@ const Homepage = () => {
         </div>
 
         <div className='block w-[100%] lg:w-[70%] mx-auto'>
-          <SHText className='text-center mb-5 w-[100%]'>The Technologies I Use</SHText>
+          <HText className='text-center mb-5 w-[100%]'>The Technologies I Use</HText>
 
           <div className='grid grid-cols-3 lg:grid-cols-4 gap-2'>
             {Skills.map((item, index) => {
@@ -71,14 +72,17 @@ const Homepage = () => {
             })}
           </div>
         </div>
-
-        
-        
-        
-
       </section>
 
-      <section id="projects" className='h-[100vh] bg-white'>Wala pa nakalagay</section>
+      <section id="projects" className='p-5 pt-10 min-h-[100vh] mb-10 lg:mb-16'>
+        <HText className="text-primary text-center mb-10 lg:mb-16">Projects</HText>
+
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-2'>
+          <div className='col-span-1 bg-blue-300'>a</div>
+          <div className='col-span-1 bg-red-300'>a</div>
+          <div className='col-span-1 bg-green-300'>a</div>
+        </div>
+      </section>
       
     </div>
     
