@@ -1,6 +1,7 @@
 import {Fade, ScrollFade} from '../components/Fade';
 import Button from '../components/Button';
 import Skill from '../components/Skill';
+import Project from '../components/Project';
 import { HText, PText } from '../components/ResponsiveText';
 import { LoremIpsum } from 'lorem-ipsum';
 import { Link as ScrollLink } from 'react-scroll';
@@ -66,7 +67,7 @@ const Homepage = () => {
             {Skills.map((item, index) => {
               return (
                 <ScrollFade className="col-span-1 sm:px-5" direction='top' key={index} delay={index * 0.03}>
-                  <Skill className='text-xs sm:text-sm md:text-base w-[100%]' image={item.image}>{item.name}</Skill>
+                  <Skill className='text-xs sm:text-sm md:text-base w-[100%]' image={item.image} skillName={item.name} />
                 </ScrollFade>
               );
             })}
@@ -74,14 +75,16 @@ const Homepage = () => {
         </div>
       </section>
 
-      <section id="projects" className='p-5 pt-10 min-h-[100vh] mb-10 lg:mb-16'>
-        <HText className="text-primary text-center mb-10 lg:mb-16">Projects</HText>
+      <section id="projects" className='pt-10 min-h-[100vh] bg-white'>
+        <HText className="text-primary text-center">Projects</HText>
 
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-2'>
-          <div className='col-span-1 bg-blue-300'>a</div>
-          <div className='col-span-1 bg-red-300'>a</div>
-          <div className='col-span-1 bg-green-300'>a</div>
-        </div>
+        {Projects.map((item, index) => {
+          return(
+            <ScrollFade direction='top' key={index} className='col-span-1 p-10 mb-10'>
+              <Project {...item}/>
+            </ScrollFade>
+          );
+        })}
       </section>
       
     </div>

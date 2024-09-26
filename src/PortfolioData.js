@@ -56,9 +56,22 @@ export const Skills = [
 
 export const Projects = [
     {
-        name: 'Inventory and Sales Management System for Samson Pharmacy', 
-        tools: ['HTML5', 'CSS', 'Javascript', 'Bootstrap', 'PHP', 'ChartJS', 'XAMPP', 'VS Code', 'MySQL', 'XAMPP'],
+        title: 'Inventory and Sales Management System', 
+        tools: ['HTML5', 'CSS', 'Javascript', 'Bootstrap', 'PHP', 'XAMPP', 'VS Code', 'MySQL', 'XAMPP'],
+        images: ['inv_sales_1.png', 'inv_sales_2.png', 'inv_sales_3.png'],
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla quam magni corporis consequatur. Natus praesentium blanditiis dicta aspernatur! Fugiat a veniam explicabo nulla adipisci iste non. Qui sit natus rem animi id praesentium unde deserunt tempore quo hic. Vel iusto minus hic, sed inventore atque eligendi amet ducimus officiis!'
+    },
+    {
+        title: 'Inventory and Sales Management System', 
+        tools: ['HTML5', 'CSS', 'Javascript', 'Bootstrap', 'PHP', 'XAMPP', 'VS Code', 'MySQL', 'XAMPP'],
+        images: ['ordering_1.png', 'ordering_2.png', 'ordering_3.png', 'ordering_4.png'],
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla quam magni corporis consequatur. Natus praesentium blanditiis dicta aspernatur! Fugiat a veniam explicabo nulla adipisci iste non. Qui sit natus rem animi id praesentium unde deserunt tempore quo hic. Vel iusto minus hic, sed inventore atque eligendi amet ducimus officiis!'
+    },
+    {
+        title: 'Inventory and Sales Management System', 
+        tools: ['HTML5', 'CSS', 'Javascript', 'Bootstrap', 'PHP', 'XAMPP', 'VS Code', 'MySQL', 'XAMPP'],
+        images: ['inv_sales_1.png', 'inv_sales_2.png', 'inv_sales_3.png'],
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla quam magni corporis consequatur. Natus praesentium blanditiis dicta aspernatur! Fugiat a veniam explicabo nulla adipisci iste non. Qui sit natus rem animi id praesentium unde deserunt tempore quo hic. Vel iusto minus hic, sed inventore atque eligendi amet ducimus officiis!'
     },
     
-]
+];

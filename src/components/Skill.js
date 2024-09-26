@@ -1,19 +1,9 @@
 import React, {useState} from 'react';
 
-const Skill = ({children, image, className, imageClassName, ...rest}) => {
+const Skill = ({skillName, image, className, imageClassName, ...rest}) => {
 
-    const importImage = (img) => {
-        try {
-            return require(`../img/skills/${img}`); // Adjust the extension as needed
-        } catch (error) {
-            console.error("Image not found:", error);
-            return null;
-        }
-    };
+    const skillImage = image ? require(`../img/skills/${image}`) : '';
 
-    const skillImage = importImage(image);
-
-    const [isHovered, setIsHovered] = useState(false);
     const defaultClassName = `
         inline-block 
         px-3 py-2 
@@ -40,13 +30,10 @@ const Skill = ({children, image, className, imageClassName, ...rest}) => {
     return (
         <div 
             className={`${defaultClassName} ${className}`} 
-            
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
             {...rest}
         >
             <img className={`${defaultImageClassName} ${imageClassName}`} src={skillImage}/>
-            {children}
+            {skillName}
         </div>
     );
 };
