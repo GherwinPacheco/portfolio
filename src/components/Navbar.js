@@ -20,9 +20,9 @@ const NavbarButton = ({children, className, ...rest}) => {
 
 const Navbar = () => {
     const navbarOptions = [
-        {name: 'HOME', to: '/'},
         {name: 'ABOUT', to: 'about'},
-        {name: 'PROJECTS', to: 'projects'}
+        {name: 'PROJECTS', to: 'projects'},
+        {name: 'CONTACT', to: 'footer'}
     ];
 
     return (

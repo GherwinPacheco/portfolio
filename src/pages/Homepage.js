@@ -7,6 +7,10 @@ import { LoremIpsum } from 'lorem-ipsum';
 import { Link as ScrollLink } from 'react-scroll';
 import {Skills, Projects} from '../PortfolioData';
 import Container from '../components/Container';
+import { Link } from 'react-router-dom';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faSquareGithub, faSquareFacebook  } from '@fortawesome/free-brands-svg-icons';
 
 import introBackground from '../img/background.jpg';
 import introIcon from '../img/programming.png';
@@ -94,8 +98,25 @@ const Homepage = () => {
       </div>
       
 
-      <footer className='w-full text-white bg-primary p-10'>
-        a
+      <footer id="footer" className='w-full text-white bg-primary p-10'>
+        <div className='container mx-auto'>
+          <PText className='text-center'>Contact me:</PText>
+          <PText className='text-center font-semibold'>gherwinpacheco1@gmail.com</PText>
+          <div className='flex justify-center mt-5'>
+            <Link className='mx-5' to="#">
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </Link>
+            <Link className='mx-5' to="#">
+              <FontAwesomeIcon icon={faSquareGithub} size="2x" />
+            </Link>
+            <Link className='mx-5' to="#">
+              <FontAwesomeIcon icon={faSquareFacebook} size="2x" />
+            </Link>
+            <Link className='mx-5' to="#">
+              Indeed Icon
+            </Link>
+          </div>
+        </div>
       </footer>
       
     </div>
