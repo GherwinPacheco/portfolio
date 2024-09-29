@@ -29,7 +29,7 @@ const Navbar = () => {
     return (
         <div className='font-semibold w-[100%] flex p-3 shadow-xl bg-white px-5'>
             <div className='flex-1'>
-                <img className='w-[50px] mr-5 inline-block' src={navbarIcon} />
+                <img className='w-[50px] mr-5 inline-block rounded-full' src={navbarIcon} />
                 <span className='hidden md:inline-block'>GHERWIN PACHECO</span>
             </div>
 

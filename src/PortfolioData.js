@@ -56,22 +56,22 @@ export const Skills = [
 
 export const Projects = [
     {
-        title: 'Inventory and Sales Management System', 
-        tools: ['HTML5', 'CSS', 'Javascript', 'Bootstrap', 'PHP', 'XAMPP', 'VS Code', 'MySQL', 'XAMPP'],
+        title: 'Inventory and Sales Management System of Kenjul\'s Pharmacy', 
+        tools: ['HTML5', 'CSS', 'Javascript', 'Bootstrap', 'PHP', 'MySQL'],
         images: ['inv_sales_1.png', 'inv_sales_2.png', 'inv_sales_3.png'],
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla quam magni corporis consequatur. Natus praesentium blanditiis dicta aspernatur! Fugiat a veniam explicabo nulla adipisci iste non. Qui sit natus rem animi id praesentium unde deserunt tempore quo hic. Vel iusto minus hic, sed inventore atque eligendi amet ducimus officiis!'
+        description: 'Developed as my capstone project for Kenjul\'s Pharmacy, the Inventory and Sales Management System is a comprehensive solution designed for efficient tracking of inventory levels, monitoring product status, processing transactions, and generating reports.'
     },
     {
-        title: 'Inventory and Sales Management System', 
-        tools: ['HTML5', 'CSS', 'Javascript', 'Bootstrap', 'PHP', 'XAMPP', 'VS Code', 'MySQL', 'XAMPP'],
+        title: 'Furniture Ordering System for Postrado', 
+        tools: ['HTML5', 'CSS', 'Javascript', 'Bootstrap', 'PHP', 'MySQL'],
         images: ['ordering_1.png', 'ordering_2.png', 'ordering_3.png', 'ordering_4.png'],
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla quam magni corporis consequatur. Natus praesentium blanditiis dicta aspernatur! Fugiat a veniam explicabo nulla adipisci iste non. Qui sit natus rem animi id praesentium unde deserunt tempore quo hic. Vel iusto minus hic, sed inventore atque eligendi amet ducimus officiis!'
+        description: 'The Furniture Ordering System is a freelance project I developed that allows customers to browse and order furniture online, as well as submit requests for custom-made pieces. The system includes an admin panel where the shop owner can manage orders, customer records, and generate detailed sales and inventory reports for efficient business management.'
     },
     {
-        title: 'Inventory and Sales Management System', 
-        tools: ['HTML5', 'CSS', 'Javascript', 'Bootstrap', 'PHP', 'XAMPP', 'VS Code', 'MySQL', 'XAMPP'],
-        images: ['inv_sales_1.png', 'inv_sales_2.png', 'inv_sales_3.png'],
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla quam magni corporis consequatur. Natus praesentium blanditiis dicta aspernatur! Fugiat a veniam explicabo nulla adipisci iste non. Qui sit natus rem animi id praesentium unde deserunt tempore quo hic. Vel iusto minus hic, sed inventore atque eligendi amet ducimus officiis!'
+        title: 'Custom QR Code Generator Web App', 
+        tools: ['HTML5', 'CSS', 'Javascript', 'React', 'Tailwind'],
+        images: ['qr_1.png', 'qr_2.png', 'qr_3.png'],
+        description: 'The Custom QR Code Generator Web App is a project I developed during my OJT at the Municipality of General Mariano Alvarez, Cavite. It was developed to help the municipality by enabling easy generation of QR Code IDs for Informal Settler Families. The web app is versatile and can also be used to create QR Code IDs for other purposes, making it a flexible tool for various identification needs.'
     },
     
 ];

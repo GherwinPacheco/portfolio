@@ -23,7 +23,7 @@ const Project = ({className, title, tools, images, description, ...rest}) => {
             </div>
             <div className='col-span-1 py-5 lg:p-10'>
                 <div className='w-[100%] lg:w-full mx-auto'>
-                    <HText className='mb-3'>{title}</HText>
+                    <HText size='sm' className='mb-3'>{title}</HText>
                     <PText className='indent-10 text-bodytext text-justify'>{description}</PText>
                 </div>
                 

@@ -26,22 +26,22 @@ export const HText = ({ children, className, size = 'md', ...rest }) => {
             defaultClassName = `
                 font-semibold
                 block
-                text-lg
-                sm:text-xl
-                md:text-2xl
-                lg:text-4xl
-                xl:text-6xl
+                text-md
+                sm:text-lg
+                md:text-xl
+                lg:text-2xl
+                xl:text-4xl
             `;
             break;
         case 'xl':
             defaultClassName = `
                 font-semibold
                 block
-                text-xl
-                sm:text-2xl
-                md:text-4xl
-                lg:text-6xl
-                xl:text-8xl
+                text-lg
+                sm:text-xl
+                md:text-2xl
+                lg:text-4xl
+                xl:text-6xl
             `;
             break;
         default:
