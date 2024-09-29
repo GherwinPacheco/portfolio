@@ -22,8 +22,7 @@ const Navbar = () => {
     const navbarOptions = [
         {name: 'HOME', to: '/'},
         {name: 'ABOUT', to: 'about'},
-        {name: 'PROJECTS', to: 'projects'},
-        {name: 'CONTACT', to: 'contact'}
+        {name: 'PROJECTS', to: 'projects'}
     ];
 
     return (

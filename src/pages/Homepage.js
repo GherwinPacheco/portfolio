@@ -22,7 +22,7 @@ const Homepage = () => {
 
       <section id="intro" 
         className="
-          h-[50vh] lg:h-[92vh]
+          h-[50vh] lg:h-[100vh]
           bg-cover bg-center bg-no-repeat 
         "
         style={{ backgroundImage: `url(${introBackground})` }}
