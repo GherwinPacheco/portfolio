@@ -52,12 +52,11 @@ const Homepage = () => {
           <HText className="text-primary text-center mb-3">Get to Know Me</HText>
 
           <div className='flex items-center mb-10 lg:mb-16'>
-            <ScrollFade direction='right' className='flex-[1.5] md:flex-1 pr-8 md:pl-10'>
+            <ScrollFade direction='right' className='flex-1 pr-8 md:pl-10'>
               <HText className='mb-2'>About Me</HText>
               <PText className='indent-8 text-justify text-bodytext mb-5'>
-                I'm a web developer with a strong foundation in both front-end and back-end technologies. 
-                I focus on creating responsive, user-friendly websites using HTML, CSS, JavaScript, and PHP. 
-                I'm eager to apply my skills and take on new challenges to build efficient and scalable solutions.
+                I'm a BS in Information Technology graduate with a strong foundation in both front-end and back-end technologies. 
+                I focus on creating responsive, user-friendly websites and I'm eager to apply my skills and take on new challenges to build efficient and scalable solutions.
               </PText>
             </ScrollFade>
 

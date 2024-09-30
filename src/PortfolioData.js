@@ -40,10 +40,6 @@ export const Skills = [
         image: 'xampp.svg'
     },
     {
-        name: 'Postman', 
-        image: 'postman.svg'
-    },
-    {
         name: 'Git', 
         image: 'git.svg'
     },
