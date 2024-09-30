@@ -2,7 +2,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import Button from '../components/Button';
+import { Button } from '../components/Forms';
 
 import navbarIcon from '../img/user.png';
 
@@ -22,7 +22,7 @@ const Navbar = () => {
     const navbarOptions = [
         {name: 'ABOUT', to: 'about'},
         {name: 'PROJECTS', to: 'projects'},
-        {name: 'CONTACT', to: 'footer'}
+        {name: 'CONTACT', to: 'contact'}
     ];
 
     return (

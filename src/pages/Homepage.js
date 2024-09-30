@@ -1,13 +1,13 @@
 import {Fade, ScrollFade} from '../components/Fade';
-import Button from '../components/Button';
+import { Button } from '../components/Forms';
 import Skill from '../components/Skill';
 import Project from '../components/Project';
-import { HText, PText } from '../components/ResponsiveText';
+import { HText, PText, SText } from '../components/ResponsiveText';
 import { LoremIpsum } from 'lorem-ipsum';
 import { Link as ScrollLink } from 'react-scroll';
 import {Skills, Projects} from '../PortfolioData';
-import Container from '../components/Container';
-import { Link } from 'react-router-dom';
+import ContactForm from '../components/ContactForm';
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faSquareGithub, faSquareFacebook  } from '@fortawesome/free-brands-svg-icons';
@@ -25,10 +25,7 @@ const Homepage = () => {
     <div className="bg-background">
 
       <section id="intro" 
-        className="
-          h-[50vh] lg:h-[100vh]
-          bg-cover bg-center bg-no-repeat 
-        "
+        className="h-[50vh] lg:h-[100vh] bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${introBackground})` }}
       >
         <div className='container flex items-center justify-center text-white h-full w-full mx-auto px-5'>
@@ -37,7 +34,7 @@ const Homepage = () => {
             <PText className='mb-5'>Building dynamic and responsive web solutions.</PText>
             
             <ScrollLink to="projects" smooth={true} duration={500}>
-              <Button className="bg-accent"><PText>Projects</PText></Button>
+              <Button className="bg-accent">Projects</Button>
             </ScrollLink>
           </Fade>
 
@@ -51,7 +48,7 @@ const Homepage = () => {
 
 
       <div className='container mx-auto'>
-        <section id="about" className='container p-5 pt-10 min-h-[100vh] mb-10 lg:mb-16'>
+        <section id="about" className='p-5 pt-10 min-h-[100vh] mb-10 lg:mb-16'>
           <HText className="text-primary text-center mb-3">Get to Know Me</HText>
 
           <div className='flex items-center mb-10 lg:mb-16'>
@@ -89,33 +86,43 @@ const Homepage = () => {
 
           {Projects.map((item, index) => {
             return(
-              <ScrollFade direction='top' key={index} className='col-span-1 p-10 mb-10'>
+              <ScrollFade direction='top' key={index} className='col-span-1 p-10'>
                 <Project {...item}/>
               </ScrollFade>
             );
           })}
         </section>
-      </div>
-      
 
-      <footer id="footer" className='w-full text-white bg-primary p-10'>
-        <div className='container mx-auto'>
-          <PText className='text-center'>Contact me:</PText>
-          <PText className='text-center font-semibold'>gherwinpacheco1@gmail.com</PText>
-          <div className='flex justify-center mt-5'>
-            <Link className='mx-5' to="#">
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
-            </Link>
-            <Link className='mx-5' to="#">
-              <FontAwesomeIcon icon={faSquareGithub} size="2x" />
-            </Link>
-            <Link className='mx-5' to="#">
+
+
+        <section id="contact" className='p-5 pt-10 min-h-[100vh]'>
+          <HText className="text-primary text-center mb-3">Contact Me</HText>
+          <ContactForm />
+        </section>
+
+        
+      </div>
+
+      <footer className="bg-gray-800 text-white py-6">
+        <div className="container mx-auto flex flex-col items-center">
+          <HText size='md' className="mb-4">Contact Me</HText>
+          <PText>Email: <a href="mailto:gherwinpacheco1@gmail.com" className="text-blue-400 hover:underline">gherwinpacheco1@gmail.com</a></PText>
+          <PText>Phone: <a href="tel:+639452170963" className="text-blue-400 hover:underline">+639452170963</a></PText>
+
+          <HText size='md' className="mt-6 mb-4">Follow Me</HText>
+          <div className="flex space-x-4">
+            <a href="https://www.facebook.com/gherwin.pacheco.08/">
               <FontAwesomeIcon icon={faSquareFacebook} size="2x" />
-            </Link>
-            <Link className='mx-5' to="#">
-              Indeed Icon
-            </Link>
+            </a>
+            <a href="https://github.com/GherwinPacheco">
+              <FontAwesomeIcon icon={faSquareGithub} size="2x" />
+            </a>
+            <a href="www.linkedin.com/in/gherwin-pacheco-4784a4319">
+              <FontAwesomeIcon icon={faLinkedin} size="2x"/>
+            </a>
           </div>
+
+          <SText className="mt-6">&copy; {new Date().getFullYear()} Gherwin Pacheco. All rights reserved.</SText>
         </div>
       </footer>
       
