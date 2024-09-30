@@ -38,13 +38,6 @@ const Navbar = () => {
                 ))}
             </div>
 
-            <div className='flex md:hidden  content-center justify-end flex-1'>
-                <Button className='font-bold p-3'>
-                    <FontAwesomeIcon icon={faBars} />
-                </Button>
-                
-            </div>
-            
         </div>
     
     );
