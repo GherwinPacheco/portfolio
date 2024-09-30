@@ -49,7 +49,7 @@ const Homepage = () => {
 
       <div className='container mx-auto'>
         <section id="about" className='p-5 pt-10 min-h-[100vh] mb-10 lg:mb-16'>
-          <HText className="text-primary text-center mb-3">Get to Know Me</HText>
+          <HText className="text-primary text-center mb-10">Get to Know Me</HText>
 
           <div className='flex items-center mb-10 lg:mb-16'>
             <ScrollFade direction='right' className='flex-1 pr-8 md:pl-10'>
@@ -61,7 +61,7 @@ const Homepage = () => {
             </ScrollFade>
 
             <ScrollFade direction='left' className='flex-1'>
-              <img src={userImg} className='mx-auto w-[100%] h-[100%] sm:w-[80%] sm:h-[80%] md:w-[60%] md:h-[60%] rounded-lg'/>
+              <img src={userImg} className='mx-auto w-[100%] h-[100%] sm:w-[80%] sm:h-[80%] md:w-[60%] md:h-[60%] rounded-lg aspect-square'/>
             </ScrollFade>
           </div>
 
