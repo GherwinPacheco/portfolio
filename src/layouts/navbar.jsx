@@ -24,7 +24,7 @@ const Navbar = () => {
                         </a>
                     )}
 
-                    <div><ModeToggle/></div>
+                    <div className="ml-5"><ModeToggle/></div>
                 </div>
 
             

@@ -46,11 +46,11 @@ const About = () => {
                     About Me
                 </h3>
                 <div className="relative w-fit mx-auto mb-6">
-                    <div className="absolute w-[80%] h-[90%] -top-5 -right-5 bg-gray-200 z-0"></div>
+                    <div className="absolute w-[80%] h-[90%] -top-5 -right-5 bg-secondary z-0"></div>
                     
                     <div className="relative">
                         <div className="absolute w-[1rem] h-[4rem] bg-primary -left-8 bottom-10"></div>
-                        <div className="absolute w-[1rem] h-[1rem] bg-gray-700 -right-7 top-10"></div>
+                        <div className="absolute w-[1rem] h-[1rem] bg-foreground -right-7 top-10"></div>
                         <img src={MyPortrait} className="h-72 lg:h-96"/>
                     </div>
                     
