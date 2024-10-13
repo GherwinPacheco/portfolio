@@ -21,7 +21,7 @@ const About = () => {
                         return (
                             <div key={index} className="col-span-1">
                                 <BehindEffect className='w-full font-medium bg-gray-300'>
-                                    <SkillBadge className='bg-accent shadow-xl border border-gray-300 dark:border-0' image={imageSrc} skill={item.name} />
+                                    <SkillBadge className='bg-secondary shadow-xl border border-gray-300 dark:border-0' image={imageSrc} skill={item.name} />
                                 </BehindEffect>
                             </div>
                             
