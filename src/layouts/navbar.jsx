@@ -10,8 +10,8 @@ const Navbar = () => {
     return (
         <nav className={`w-screen fixed bg-white dark:bg-black z-50`}>
             <div className='container mx-auto p-3 flex items-center justify-center'>
-                <div className='flex-[1]'>
-                    <p className='font-bold py-2'>
+                <div className='flex-[1] flex items-center'>
+                    <p className='font-bold py-2 px-3 lg:px-0'>
                         Portfolio
                     </p>
                 </div>
@@ -24,9 +24,9 @@ const Navbar = () => {
                         </a>
                     )}
 
-                    <div className="ml-5"><ModeToggle/></div>
+                    
                 </div>
-
+                <div className="mx-5 lg:mr-0 lg:ml-5"><ModeToggle/></div>
             
             </div>
         </nav>
