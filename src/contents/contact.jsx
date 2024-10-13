@@ -67,16 +67,16 @@ const Contact = () => {
 
 
     return (
-        <section id="home" className='bg-foreground p-10'>
+        <section id="contact" className='bg-foreground dark:bg-accent p-10'>
             <h3 className="scroll-m-20 text-2xl text-white font-semibold tracking-tight mb-10 text-center">
                 Contact Me
             </h3>
 
             <div className='flex justify-center '>
                 <form className='w-full md:w-[50%]' onSubmit={sendEmail}>
-                    <Input type='text' name='name' className='mb-4 bg-white' placeholder='Name' value={formData.name || ''} onChange={handleChange} required={true}/>
-                    <Input type='email' name='email' className='mb-4  bg-white' placeholder='Email Address' value={formData.email || ''} onChange={handleChange} required={true}/>
-                    <Textarea className='mb-4  bg-white' name='message' rows={15} placeholder='Message' value={formData.message || ''} onChange={handleChange} required={true}/>
+                    <Input type='text' name='name' className='mb-4 bg-background' placeholder='Name' value={formData.name || ''} onChange={handleChange} required={true}/>
+                    <Input type='email' name='email' className='mb-4  bg-background' placeholder='Email Address' value={formData.email || ''} onChange={handleChange} required={true}/>
+                    <Textarea className='mb-4  bg-background' name='message' rows={15} placeholder='Message' value={formData.message || ''} onChange={handleChange} required={true}/>
                     <div className='flex justify-end'>
                         <Button type='submit'>Submit</Button>
                     </div>

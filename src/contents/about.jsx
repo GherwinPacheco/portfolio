@@ -20,8 +20,8 @@ const About = () => {
                         const imageSrc = new URL(`../assets/skills/${item.image}`, import.meta.url).href
                         return (
                             <div key={index} className="col-span-1">
-                                <BehindEffect className='w-full font-medium bg-gray-200'>
-                                    <SkillBadge className='bg-white shadow-lg' image={imageSrc} skill={item.name} />
+                                <BehindEffect className='w-full font-medium bg-gray-300'>
+                                    <SkillBadge className='bg-accent shadow-xl border border-gray-300 dark:border-0' image={imageSrc} skill={item.name} />
                                 </BehindEffect>
                             </div>
                             

@@ -12,7 +12,7 @@ function App() {
 
   return (
     <ThemeProvider>
-      <main className='bg-secondary text-foreground'>
+      <main className='bg-white dark:bg-black text-foreground'>
         <Navbar/>
 
         <div id="content" className='container mx-auto px-3 pt-20 md:pt-10'>

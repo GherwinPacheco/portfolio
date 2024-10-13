@@ -19,7 +19,7 @@ const Projects = () => {
 
             {MyProjects.map((item, index) => {
                 return (
-                    <div key={index} className="flex flex-col-reverse lg:flex-row mb-20 duration-300 hover:bg-white hover:shadow-xl p-5">
+                    <div key={index} className="flex flex-col-reverse lg:flex-row mb-20 duration-300 hover:bg-accent hover:shadow-xl p-5">
                         <div className="flex-[1]">
                             <div className="hidden lg:block">
                                 <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">

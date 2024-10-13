@@ -31,22 +31,28 @@ const Intro = () => {
 
 
                 <div className="absolute left-0 md:left-auto md:right-0 bottom-28 flex flex-col gap-3">
-                    <BehindEffect className='bg-primary'>
-                        <Button size="icon" className="bg-black hover:bg-black">
-                            <FontAwesomeIcon icon={faFacebookF}/>
-                        </Button>
+                    <BehindEffect className='bg-foreground'>
+                        <a href="https://www.facebook.com/gherwin.pacheco.08/">
+                            <Button size="icon">
+                                <FontAwesomeIcon icon={faFacebookF}/>
+                            </Button>
+                        </a>
                     </BehindEffect>
 
-                    <BehindEffect className='bg-primary'>
-                        <Button size="icon" className="bg-black hover:bg-black">
-                            <FontAwesomeIcon icon={faLinkedinIn}/>
-                        </Button>
+                    <BehindEffect className='bg-foreground'>
+                        <a href="https://github.com/GherwinPacheco">
+                            <Button size="icon">
+                                <FontAwesomeIcon icon={faLinkedinIn}/>
+                            </Button>
+                        </a>
                     </BehindEffect>
 
-                    <BehindEffect className='bg-primary'>
-                        <Button size="icon" className="bg-black hover:bg-black">
-                            <FontAwesomeIcon icon={faGithubAlt}/>
-                        </Button>
+                    <BehindEffect className='bg-foreground'>
+                        <a href="www.linkedin.com/in/gherwin-pacheco-4784a4319">
+                            <Button size="icon">
+                                <FontAwesomeIcon icon={faGithubAlt}/>
+                            </Button>
+                        </a>
                     </BehindEffect>
 
 
