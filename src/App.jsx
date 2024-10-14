@@ -12,10 +12,10 @@ function App() {
 
   return (
     <ThemeProvider>
-      <main className='bg-white dark:bg-black text-foreground'>
+      <main className='bg-white dark:bg-black text-foreground duration-300'>
         <Navbar/>
 
-        <div id="content" className='container mx-auto px-3 pt-20 md:pt-10'>
+        <div id="content" className='container mx-auto px-3 md:pt-10'>
           <Intro />
           <About />
           <Projects />

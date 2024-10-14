@@ -8,7 +8,7 @@ const Navbar = () => {
         { name: "Contact", link: "#contact" },
     ]
     return (
-        <nav className={`w-screen fixed bg-white dark:bg-black z-50`}>
+        <nav className={`w-screen fixed bg-white dark:bg-black z-50 duration-300`}>
             <div className='container mx-auto p-3 flex items-center justify-center'>
                 <div className='flex-[1] flex items-center'>
                     <p className='font-bold py-2 px-3 lg:px-0'>

@@ -10,15 +10,15 @@ const Intro = () => {
     const introMessage = 'Aspiring developer passionate about developing websites and applications.';
 
     return (
-        <section id="home" className='flex items-center pb-20 md:py-28'>
+        <section id="home" className='flex items-center h-screen sm:h-auto sm:pt-20 sm:pb-20'>
             <div className='flex-[1] hidden md:inline'>
               <h2 className="text-3xl pb-2 font-semibold tracking-tight first:mt-0">
-                <span className="text-muted-foreground">{'<'}</span> Gherwin_Pacheco <span className="text-muted-foreground">{'/>'}</span>
+                Gherwin Pacheco
               </h2>
               <p>{introMessage}</p>
             </div>
             <div className='flex-[1] relative'>
-                <h2 className="md:hidden text-3xl pb-2 font-semibold tracking-tight first:mt-0 text-center mb-6">
+                <h2 className="md:hidden text-3xl font-semibold tracking-tight first:mt-0 text-center mb-6">
                     Gherwin Pacheco
                 </h2>
 

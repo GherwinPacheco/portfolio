@@ -9,25 +9,28 @@ const About = () => {
     const AboutContent = ({className}) => {
         return (
             <div id="aboutContent" className={className}>
-                <p className=" mb-6 px-10 text-justify">I'm a BS in Information Technology graduate with a strong foundation in both front-end and back-end technologies. I focus on creating responsive, user-friendly websites and I'm eager to apply my skills and take on new challenges to build efficient and scalable solutions.</p>
+                <p className=" mb-10 sm:mb-6 px-10 text-justify">I'm a BS in Information Technology graduate with a strong foundation in both front-end and back-end technologies. I focus on creating responsive, user-friendly websites and I'm eager to apply my skills and take on new challenges to build efficient and scalable solutions.</p>
 
-                <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mt-10 lg:mt-0 mb-6 lg:mb-3 text-center lg:text-left">
-                    Technologies I Use
-                </h3>
+                <div className="pt-10 sm:pt-0">
+                    <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-6 lg:mb-2 text-center lg:text-left">
+                        Technologies I Use
+                    </h3>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-3">
-                    {Skills.map((item, index) => {
-                        const imageSrc = new URL(`../assets/skills/${item.image}`, import.meta.url).href
-                        return (
-                            <div key={index} className="col-span-1">
-                                <BehindEffect className='w-full font-medium bg-gray-300'>
-                                    <SkillBadge className='bg-secondary shadow-xl border border-gray-300 dark:border-0' image={imageSrc} skill={item.name} />
-                                </BehindEffect>
-                            </div>
-                            
-                        )
-                    })}
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-4 px-3">
+                        {Skills.map((item, index) => {
+                            const imageSrc = new URL(`../assets/skills/${item.image}`, import.meta.url).href
+                            return (
+                                <div key={index} className="col-span-1">
+                                    <BehindEffect className='w-full font-medium bg-gray-300'>
+                                        <SkillBadge className='bg-secondary shadow-xl overflow-ellipsis' image={imageSrc} skill={item.name} />
+                                    </BehindEffect>
+                                </div>
+                                
+                            )
+                        })}
+                    </div>
                 </div>
+                
 
                 
             </div>
@@ -39,10 +42,10 @@ const About = () => {
 
 
     return (
-        <section id="about" className='flex pb-20 md:py-28'>
+        <section id="about" className='flex py-10'>
             
             <div className='flex-[1]'>
-                <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-10 text-center lg:hidden">
+                <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-6 text-center lg:hidden">
                     About Me
                 </h3>
                 <div className="relative w-fit mx-auto mb-6">
@@ -60,7 +63,7 @@ const About = () => {
 
             
             <div className="flex-[1.5] hidden lg:inline">
-                <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-3 hidden md:block">
+                <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-2 hidden md:block">
                     About Me
                 </h3>
                 <AboutContent/>
