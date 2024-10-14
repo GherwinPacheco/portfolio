@@ -19,7 +19,7 @@ const Navbar = () => {
 
                 <div className='flex-[1] hidden lg:flex items-center justify-end'>
                     {navMenu.map((item, index) => 
-                        <a key={index} href={item.link} className='font-semibold px-5 py-2 bg-transparent text-foreground hover:bg-primary hover:text-white duration-300'>
+                        <a key={index} href={item.link} className='font-semibold px-5 py-2 bg-transparent text-foreground hover:bg-black dark:hover:bg-primary hover:text-white duration-300'>
                             {item.name}
                         </a>
                     )}

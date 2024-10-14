@@ -11,12 +11,19 @@ import {
 import { useTheme } from "@/components/ui/theme-provider"
 
 export function ModeToggle() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    
+    //returns the saved theme
+    return savedTheme ? (savedTheme == 'dark' && true) : false;
+
+  });
   const { setTheme } = useTheme()
 
   useEffect(() => {
     const theme = isDark ? 'dark' : 'light'
     setTheme(theme)
+    localStorage.setItem("theme", theme);
   }, [isDark]);
 
   return (
