@@ -15,7 +15,7 @@ const Projects = () => {
 
 
     return (
-        <section id="projects" className='py-10'>
+        <section id="projects" className='py-20'>
             
             <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-6 text-center">
                 Projects
@@ -23,7 +23,7 @@ const Projects = () => {
 
             {MyProjects.map((item, index) => {
                 return (
-                    <div key={index} className="flex flex-col lg:flex-row mb-6 lg:mb-12 rounded-xl border bg-card text-card-foreground shadow p-5">
+                    <div key={index} className="flex flex-col lg:flex-row mb-6 lg:mb-8 rounded-xl border bg-card text-card-foreground shadow p-5">
                         <div className="flex-[1]">
 
                             {/* Visible on large screen */}

@@ -9,9 +9,9 @@ const About = () => {
     const AboutContent = ({className}) => {
         return (
             <div id="aboutContent" className={className}>
-                <p className=" mb-10 sm:mb-6 px-10 text-justify">I'm a BS in Information Technology graduate with a strong foundation in both front-end and back-end technologies. I focus on creating responsive, user-friendly websites and I'm eager to apply my skills and take on new challenges to build efficient and scalable solutions.</p>
+                <p className=" pb-20 sm:pb-6 px-10 text-justify">I'm a BS in Information Technology graduate with a strong foundation in both front-end and back-end technologies. I focus on creating responsive, user-friendly websites and I'm eager to apply my skills and take on new challenges to build efficient and scalable solutions.</p>
 
-                <div className="pt-10 sm:pt-0">
+                <div className="pt-20 sm:pt-0">
                     <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-6 lg:mb-2 text-center lg:text-left">
                         Technologies I Use
                     </h3>
@@ -42,7 +42,7 @@ const About = () => {
 
 
     return (
-        <section id="about" className='flex py-10'>
+        <section id="about" className='flex py-20'>
             
             <div className='flex-[1]'>
                 <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-6 text-center lg:hidden">

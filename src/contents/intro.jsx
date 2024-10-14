@@ -10,7 +10,7 @@ const Intro = () => {
     const introMessage = 'Aspiring developer passionate about developing websites and applications.';
 
     return (
-        <section id="home" className='flex items-center h-screen sm:h-auto sm:pt-20 sm:pb-20'>
+        <section id="home" className='flex items-center h-screen sm:h-auto sm:pt-20 sm:pb-10'>
             <div className='flex-[1] hidden md:inline'>
               <h2 className="text-3xl pb-2 font-semibold tracking-tight first:mt-0">
                 Gherwin Pacheco
