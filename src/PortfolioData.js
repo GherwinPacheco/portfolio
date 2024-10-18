@@ -51,7 +51,7 @@ export const Projects = [
         title: 'Inventory and Sales Management System', 
         tools: ['HTML5', 'CSS', 'Javascript', 'Bootstrap', 'PHP', 'MySQL'],
         images: ['inv_sales_1.png', 'inv_sales_2.png', 'inv_sales_3.png'],
-        description: 'Developed as my capstone project for Kenjul\'s Pharmacy, the Inventory and Sales Management System is a comprehensive solution designed for efficient tracking of inventory levels, monitoring product status, processing transactions, and generating reports.'
+        description: 'Developed as my capstone project for Samson\'s Pharmacy, the Inventory and Sales Management System is a comprehensive solution designed for efficient tracking of inventory levels, monitoring product status, processing transactions, and generating reports.'
     },
     {
         title: 'Furniture Ordering System', 
