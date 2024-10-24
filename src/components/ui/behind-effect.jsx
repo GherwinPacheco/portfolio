@@ -1,7 +1,7 @@
-const BehindEffect = ({ className, children, distance = 10, enabled = false, direction = 'left' }) => {
+const BehindEffect = ({ className, children, distance = 5, enabled = false, direction = 'left' }) => {
     // Determine the direction for translation
-    const translateX = direction === 'left' ? `-${distance}%` : `${distance}%`;
-    const translateY = direction === 'left' ? `-${distance}%` : `${distance}%`;
+    const translateX = direction === 'left' ? `-${distance}px` : `${distance}px`;
+    const translateY = direction === 'left' ? `-${distance}px` : `${distance}px`;
 
     // Construct the hover or static translation based on `enabled`
     const animationClass = enabled

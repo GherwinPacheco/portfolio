@@ -6,7 +6,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-  
+import BehindEffect from "@/components/ui/behind-effect";
 
 
 const Projects = () => {
@@ -23,7 +23,8 @@ const Projects = () => {
 
             {MyProjects.map((item, index) => {
                 return (
-                    <div key={index} className="flex flex-col lg:flex-row mb-6 lg:mb-8 rounded-xl border bg-card text-card-foreground shadow p-5">
+                    <BehindEffect key={index}  className='bg-gray-300' distance={10}>
+                    <div className="flex flex-col lg:flex-row mb-6 lg:mb-8 bg-card text-card-foreground border shadow p-5">
                         <div className="flex-[1]">
 
                             {/* Visible on large screen */}
@@ -68,6 +69,7 @@ const Projects = () => {
                             </p>
                         </div>
                     </div>
+                    </BehindEffect>
                 );
             })}
             
