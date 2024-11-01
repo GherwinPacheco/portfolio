@@ -16,6 +16,10 @@ export const Skills = [
         image: 'php.svg'
     },
     {
+        name: 'Java', 
+        image: 'java.svg'
+    },
+    {
         name: 'Bootstrap', 
         image: 'bootstrap.svg'
     },
