@@ -63,7 +63,7 @@ export const Projects = [
         tools: ['HTML5', 'CSS', 'Javascript', 'Bootstrap', 'PHP', 'MySQL'],
         images: ['ordering_1.png', 'ordering_2.png', 'ordering_3.png', 'ordering_4.png'],
         description: 'The Furniture Ordering System is a freelance project I developed that allows customers to browse and order furniture online, as well as submit requests for custom-made pieces. The system includes an admin panel where the shop owner can manage orders, customer records, and generate detailed sales and inventory reports for efficient business management.',
-        link: 'https://github.com/GherwinPacheco/postrado'
+        link: 'https://postradowoodworks.shop'
     },
     {
         title: 'Custom QR Code Generator Web App', 
