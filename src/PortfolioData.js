@@ -47,6 +47,10 @@ export const Skills = [
         name: 'VSCode', 
         image: 'vscode.svg'
     },
+    {
+        name: 'Test', 
+        image: 'vscode.svg'
+    },
     
 ];
 
