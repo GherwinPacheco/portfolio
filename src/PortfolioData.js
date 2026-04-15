@@ -1,19 +1,16 @@
 export const Skills = [
+    
     {
-        name: 'HTML5', 
-        image: 'html5.svg'
-    },
-    {
-        name: 'CSS', 
-        image: 'css.svg'
-    },
-    {
-        name: 'Javascript', 
-        image: 'javascript.svg'
+        name: 'C#', 
+        image: 'csharp.svg'
     },
     {
         name: 'PHP', 
         image: 'php.svg'
+    },
+    {
+        name: 'Javascript', 
+        image: 'javascript.svg'
     },
     {
         name: 'Java', 
@@ -36,6 +33,10 @@ export const Skills = [
         image: 'tailwind.svg'
     },
     {
+        name: 'ASP .NET', 
+        image: 'aspnet.svg'
+    },
+    {
         name: 'MySQL', 
         image: 'mysql.svg'
     },
@@ -45,10 +46,6 @@ export const Skills = [
     },
     {
         name: 'VSCode', 
-        image: 'vscode.svg'
-    },
-    {
-        name: 'Test', 
         image: 'vscode.svg'
     },
     
@@ -71,7 +68,7 @@ export const Projects = [
     },
     {
         title: 'Custom QR Code Generator Web App', 
-        tools: ['HTML5', 'CSS', 'Javascript', 'React', 'Tailwind'],
+        tools: ['React', 'Tailwind'],
         images: ['qr_1.png', 'qr_2.png', 'qr_3.png'],
         description: 'The Custom QR Code Generator Web App is a project I developed during my internship at the Municipality of General Mariano Alvarez, Cavite. It was developed to help the municipality by enabling easy generation of QR Code IDs for Informal Settler Families. The web app is versatile and can also be used to create QR Code IDs for other purposes, making it a flexible tool for various identification needs.',
         link: 'https://gherwinpacheco.github.io/qrcode-generator/'
