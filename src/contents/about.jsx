@@ -46,7 +46,14 @@ const About = () => {
                                 <div className="bg-card p-10">
                                     <h4 className="text-xl font-bold">{item.position}</h4>
                                     <p className="text-lg text-green-500 font-bold">{item.company}</p>
-                                    <p className="text-md text-muted-foreground md:absolute md:right-0 md:top-5">{item.duration}</p>
+                                    <p className="text-md md:absolute md:right-0 md:top-5">{item.duration}</p>
+                                    <p className="text-md">
+                                        Tech Stack: {item.techstack.map((tech, index) => (
+                                            <span key={index} className="text-sm text-muted-foreground">
+                                                {tech}{(index + 1) !== item.techstack.length && ', '}
+                                            </span>
+                                        ))}
+                                    </p>
                                     <ul className="list-disc list-inside mt-2">
                                         {item.descriptions.map((desc, i) => (
                                             <li key={i} className="text-muted-foreground">
