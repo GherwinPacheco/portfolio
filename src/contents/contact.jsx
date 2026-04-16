@@ -29,7 +29,7 @@ const Contact = () => {
         setSending(true);
     
         emailjs.send(
-            'service_scx1ls4',
+            'service_11f18ds',
             'template_8557416',
             {
                 receiver: 'Gherwin',

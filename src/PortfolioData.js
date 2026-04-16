@@ -21,10 +21,6 @@ export const Skills = [
         image: 'bootstrap.svg'
     },
     {
-        name: 'jQuery', 
-        image: 'jquery.svg'
-    },
-    {
         name: 'React', 
         image: 'react.svg'
     },
@@ -51,6 +47,20 @@ export const Skills = [
     
 ];
 
+export const Experience = [
+    {
+        position: 'Software Developer',
+        company: 'GRUPPO EMS',
+        techstack: ['C#', 'VB.NET', 'PHP', 'Javascript', 'Bootstrap', 'ASP .NET', 'MySQL', 'VSCode', 'Git'],
+        duration: 'March 2025 - Present',
+        descriptions: [
+            'Developed and maintained internal web and desktop applications for production, warehouse, and QA workflows.',
+            'Built inventory monitoring modules with role-based access control and automated label generation.',
+            'Resolved bugs and support tickets, collaborated with QA on testing, and wrote technical documentation.'
+        ]
+    },
+];
+
 export const Projects = [
     {
         title: 'Inventory and Sales Management System', 
@@ -64,7 +74,7 @@ export const Projects = [
         tools: ['HTML5', 'CSS', 'Javascript', 'Bootstrap', 'PHP', 'MySQL'],
         images: ['ordering_1.png', 'ordering_2.png', 'ordering_3.png', 'ordering_4.png'],
         description: 'The Furniture Ordering System is a freelance project I developed that allows customers to browse and order furniture online, as well as submit requests for custom-made pieces. The system includes an admin panel where the shop owner can manage orders, customer records, and generate detailed sales and inventory reports for efficient business management.',
-        link: 'https://postradowoodworks.shop'
+        link: 'https://github.com/GherwinPacheco/postrado'
     },
     {
         title: 'Custom QR Code Generator Web App', 

@@ -8,7 +8,7 @@ import BehindEffect from "@/components/ui/behind-effect";
 import { FileUser } from 'lucide-react';
 
 const Intro = () => {
-    const introMessage = 'Aspiring developer passionate about developing websites and applications.';
+    const introMessage = 'Software Developer passionate about building reliable, efficient applications across web and enterprise environments.';
 
     return (
         <section id="home" className='flex items-center h-screen sm:h-auto sm:pt-20 sm:pb-10'>

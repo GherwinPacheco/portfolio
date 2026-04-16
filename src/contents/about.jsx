@@ -1,7 +1,7 @@
 import MyPortrait from "@/assets/image_portrait.jpg"
 import BehindEffect from "@/components/ui/behind-effect"
 import SkillBadge from "@/components/ui/skill-badge"
-import { Skills } from "@/PortfolioData"
+import { Skills, Experience } from "@/PortfolioData"
 
 
 const About = () => {
@@ -9,7 +9,10 @@ const About = () => {
     const AboutContent = ({className}) => {
         return (
             <div id="aboutContent" className={className}>
-                <p className=" pb-20 sm:pb-6 px-10 text-justify">I'm a BS in Information Technology graduate with a strong foundation in both front-end and back-end technologies. I focus on creating responsive, user-friendly websites and I'm eager to apply my skills and take on new challenges to build efficient and scalable solutions.</p>
+                <p className=" pb-20 sm:pb-6 px-10 text-justify">
+                    I'm a Software Developer with over a year of professional experience building and maintaining full-stack applications using C#, ASP.NET, PHP, JavaScript, and MySQL. I enjoy writing clean, practical code that solves real problems and I'm always open to tackling new challenges across different domains and tech stacks.
+                    I hold a BS in Information Technology from Cavite State University.</p>
+
 
                 <div className="pt-20 sm:pt-0">
                     <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-6 lg:mb-2 text-center lg:text-left">
@@ -29,6 +32,32 @@ const About = () => {
                             )
                         })}
                     </div>
+                </div>
+
+                
+                <div className="pt-20 sm:pt-0 mt-20">
+                    <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-6 lg:mb-2 text-center lg:text-left">
+                        Work Experience
+                    </h3>
+
+                    {Experience.map((item, index) => {
+                        return (
+                            <BehindEffect key={index}  className='bg-gray-300 cursor-pointer' distance={10}>
+                                <div className="bg-card p-10">
+                                    <h4 className="text-xl font-bold">{item.position}</h4>
+                                    <p className="text-lg text-green-500 font-bold">{item.company}</p>
+                                    <p className="text-md text-muted-foreground md:absolute md:right-0 md:top-5">{item.duration}</p>
+                                    <ul className="list-disc list-inside mt-2">
+                                        {item.descriptions.map((desc, i) => (
+                                            <li key={i} className="text-muted-foreground">
+                                                {desc}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </BehindEffect>
+                        )
+                    })}
                 </div>
                 
 
