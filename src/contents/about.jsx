@@ -10,7 +10,7 @@ const About = () => {
         return (
             <div id="aboutContent" className={className}>
                 <p className=" pb-20 sm:pb-6 px-10 text-justify">
-                    I'm a Software Developer with over a year of professional experience building and maintaining full-stack applications using C#, ASP.NET, PHP, JavaScript, and MySQL. I enjoy writing clean, practical code that solves real problems and I'm always open to tackling new challenges across different domains and tech stacks.
+                    I'm a Software Developer with over a year of professional experience building and maintaining Manufacturing Execution Systems (MES) and full-stack applications using C#, ASP.NET, PHP, JavaScript, React, and MySQL. I enjoy writing clean, practical code that solves real problems, and I leverage AI tools to accelerate development and streamline workflows. I'm always open to tackling new challenges across different domains and tech stacks.
                     I hold a BS in Information Technology from Cavite State University.</p>
 
 

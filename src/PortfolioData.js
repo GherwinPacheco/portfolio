@@ -1,25 +1,4 @@
 export const Skills = [
-    
-    {
-        name: 'C#', 
-        image: 'csharp.svg'
-    },
-    {
-        name: 'PHP', 
-        image: 'php.svg'
-    },
-    {
-        name: 'Javascript', 
-        image: 'javascript.svg'
-    },
-    {
-        name: 'Java', 
-        image: 'java.svg'
-    },
-    {
-        name: 'Bootstrap', 
-        image: 'bootstrap.svg'
-    },
     {
         name: 'React', 
         image: 'react.svg'
@@ -29,8 +8,28 @@ export const Skills = [
         image: 'tailwind.svg'
     },
     {
+        name: 'Javascript', 
+        image: 'javascript.svg'
+    },
+    {
+        name: 'C#', 
+        image: 'csharp.svg'
+    },
+    {
         name: 'ASP .NET', 
         image: 'aspnet.svg'
+    },
+    {
+        name: 'n8n', 
+        image: 'n8n.svg'
+    },
+    {
+        name: 'Codex', 
+        image: 'codex.svg'
+    },
+    {
+        name: 'PHP', 
+        image: 'php.svg'
     },
     {
         name: 'MySQL', 
@@ -44,18 +43,25 @@ export const Skills = [
         name: 'VSCode', 
         image: 'vscode.svg'
     },
-    
+    {
+        name: 'Bootstrap', 
+        image: 'bootstrap.svg'
+    },
+    {
+        name: 'Java', 
+        image: 'java.svg'
+    },
 ];
 
 export const Experience = [
     {
         position: 'Software Developer',
         company: 'GRUPPO EMS',
-        techstack: ['C#', 'VB.NET', 'PHP', 'Javascript', 'Bootstrap', 'ASP .NET', 'MySQL', 'VSCode', 'Git'],
-        duration: 'March 2025 - Present',
+        techstack: ['C#', 'VB.NET', 'ASP.NET', 'PHP', 'Javascript', 'n8n', 'Codex', 'PHP', 'MySQL', 'MySQL', 'Git'],
+        duration: 'January 2025 - Present',
         descriptions: [
-            'Developed and maintained internal web and desktop applications for production, warehouse, and QA workflows.',
-            'Built inventory monitoring modules with role-based access control and automated label generation.',
+            'Developed and maintained internal MES/WMS systems supporting production, warehouse, and QA workflows across multiple client lines.',
+            'Leveraged AI-assisted development tools and n8n automation to accelerate feature delivery, streamline reporting, and reduce manual internal processes.',
             'Resolved bugs and support tickets, collaborated with QA on testing, and wrote technical documentation.'
         ]
     },
