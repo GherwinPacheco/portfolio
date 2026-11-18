@@ -1,38 +1,32 @@
-import { ThemeProvider } from "@/components/ui/theme-provider"
-import Intro from "@/contents/intro"
-import About from "@/contents/about"
-import Projects from "@/contents/projects"
+"use client";
 
-import Navbar from "@/layouts/navbar"
-import Contact from "./contents/contact"
-import { Toaster } from "./layouts/toaster"
-import Footer from "./layouts/footer"
+import { ThemeProvider } from "@/components/ui/theme-provider";
+import Intro from "@/contents/intro";
+import About from "@/contents/about";
+import Projects from "@/contents/projects";
+import Navbar from "@/layouts/navbar";
+import Contact from "@/contents/contact";
+import { Toaster } from "@/layouts/toaster";
+import Footer from "@/layouts/footer";
 
 function App() {
-
   return (
-    <ThemeProvider>
-      <main className='bg-white dark:bg-black text-foreground duration-300'>
-        <Navbar/>
+    <ThemeProvider defaultTheme="light">
+      <main className="min-h-screen bg-white dark:bg-black text-foreground duration-300">
+        <Navbar />
 
-        <div id="content" className='container mx-auto px-3 md:px-0 md:pt-10'>
+        <div id="content" className="container mx-auto px-4 md:px-8 md:pt-10 max-w-6xl">
           <Intro />
           <About />
           <Projects />
-          
         </div>
+
         <Contact />
-        <Footer/>
-        
-
-
-        
-
-        
+        <Footer />
       </main>
       <Toaster />
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;

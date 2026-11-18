@@ -1,37 +1,74 @@
-import { ModeToggle } from "@/components/ui/mode-toggle"
+"use client";
+
+import { useState } from "react";
+import { ModeToggle } from "@/components/ui/mode-toggle";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
-    const navMenu = [
-        { name: "Home", link: "#home" },
-        { name: "About Me", link: "#about" },
-        { name: "Projects", link: "#projects" },
-        { name: "Contact", link: "#contact" },
-    ]
-    return (
-        <nav className={`w-screen fixed bg-white dark:bg-black z-50 duration-300`}>
-            <div className='container mx-auto p-3 flex items-center justify-center'>
-                <div className='flex-[1] flex items-center'>
-                    <p className='font-bold py-2 px-3 lg:px-0'>
-                        Portfolio
-                    </p>
-                </div>
+  const [menuOpen, setMenuOpen] = useState(false);
 
+  const navMenu = [
+    { name: "Home", link: "#home" },
+    { name: "About", link: "#about" },
+    { name: "Experience", link: "#experience" },
+    { name: "Projects", link: "#projects" },
+    { name: "Contact", link: "#contact" },
+  ];
 
-                <div className='flex-[1] hidden lg:flex items-center justify-end'>
-                    {navMenu.map((item, index) => 
-                        <a key={index} href={item.link} className='font-semibold px-5 py-2 bg-transparent text-foreground hover:bg-black dark:hover:bg-primary hover:text-white duration-300'>
-                            {item.name}
-                        </a>
-                    )}
+  return (
+    <nav className="w-full fixed top-0 left-0 bg-white/95 dark:bg-black/95 backdrop-blur-sm z-50 border-b border-border/60 duration-300">
+      <div className="container mx-auto px-4 md:px-8 max-w-6xl h-16 flex items-center justify-between">
+        <a
+          href="#home"
+          className="font-bold text-lg tracking-tight flex items-center gap-2"
+        >
+          <span className="w-2.5 h-2.5 bg-primary inline-block" />
+          Gherwin Pacheco
+        </a>
 
-                    
-                </div>
-                <div className="mx-5 lg:mr-0 lg:ml-5"><ModeToggle/></div>
-            
-            </div>
-        </nav>
-    )
-    
-}
+        <div className="flex items-center gap-1">
+          <div className="hidden md:flex items-center">
+            {navMenu.map((item, index) => (
+              <a
+                key={index}
+                href={item.link}
+                className="font-medium text-sm px-4 py-2 text-muted-foreground hover:text-foreground hover:bg-secondary duration-200"
+              >
+                {item.name}
+              </a>
+            ))}
+          </div>
+
+          <div className="ml-3 flex items-center gap-2">
+            <ModeToggle />
+            <button
+              type="button"
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="md:hidden p-2 border border-border text-foreground"
+              aria-label="Toggle navigation"
+            >
+              {menuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {menuOpen && (
+        <div className="md:hidden bg-white dark:bg-black border-b border-border px-4 py-3 flex flex-col gap-1">
+          {navMenu.map((item, index) => (
+            <a
+              key={index}
+              href={item.link}
+              onClick={() => setMenuOpen(false)}
+              className="font-medium text-sm px-3 py-2 text-foreground hover:bg-secondary"
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+      )}
+    </nav>
+  );
+};
 
 export default Navbar;

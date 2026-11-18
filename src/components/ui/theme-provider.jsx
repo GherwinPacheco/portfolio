@@ -1,28 +1,41 @@
+"use client";
+
 import { createContext, useContext, useEffect, useState } from "react";
 
 const initialState = {
-  theme: "light",
+  theme: "dark",
   setTheme: () => null,
 };
 
 const ThemeProviderContext = createContext(initialState);
 
-export function ThemeProvider({ children, defaultTheme = "system", storageKey = "vite-ui-theme", ...props }) {
-  const [theme, setTheme] = useState(
-    () => localStorage.getItem(storageKey) || defaultTheme
-  );
+export function ThemeProvider({
+  children,
+  defaultTheme = "dark",
+  storageKey = "gherwin-portfolio-theme",
+  ...props
+}) {
+  const [theme, setThemeState] = useState(defaultTheme);
+
+  useEffect(() => {
+    try {
+      const saved = window.localStorage.getItem(storageKey);
+      if (saved === "light" || saved === "dark") {
+        setThemeState(saved);
+      }
+    } catch {
+      // ignore localStorage errors
+    }
+  }, [storageKey]);
 
   useEffect(() => {
     const root = window.document.documentElement;
-
     root.classList.remove("light", "dark");
 
     if (theme === "system") {
-      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-        .matches
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
         ? "dark"
         : "light";
-
       root.classList.add(systemTheme);
       return;
     }
@@ -32,9 +45,13 @@ export function ThemeProvider({ children, defaultTheme = "system", storageKey = 
 
   const value = {
     theme,
-    setTheme: (theme) => {
-      localStorage.setItem(storageKey, theme);
-      setTheme(theme);
+    setTheme: (nextTheme) => {
+      try {
+        window.localStorage.setItem(storageKey, nextTheme);
+      } catch {
+        // ignore localStorage errors
+      }
+      setThemeState(nextTheme);
     },
   };
 
