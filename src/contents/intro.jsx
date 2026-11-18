@@ -40,7 +40,8 @@ const Intro = () => {
           Software Developer with 2+ years of experience maintaining, revising,
           and troubleshooting internal MES and WMS systems across 19 SMT
           electronics production lines, optimizing production SQL queries, and
-          building full-stack web applications.
+          accelerating development with agentic AI tools (Codex, Antigravity,
+          Kiro) and n8n workflow automation.
         </p>
 
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">

@@ -40,13 +40,18 @@ export const SkillGroups = [
     ],
   },
   {
-    category: "Database & Tools",
+    category: "AI & Workflow Automation",
     items: [
-      { name: "MySQL", image: "mysql.svg" },
-      { name: "n8n", image: "n8n.svg" },
       { name: "Codex", image: "codex.svg" },
       { name: "Antigravity", image: "antigravity.svg" },
       { name: "Kiro", image: "kiro.svg" },
+      { name: "n8n", image: "n8n.svg" },
+    ],
+  },
+  {
+    category: "Database & Tools",
+    items: [
+      { name: "MySQL", image: "mysql.svg" },
       { name: "Git & GitHub", image: "git.svg" },
       { name: "VS Code", image: "vscode.svg" },
     ],
