@@ -29,7 +29,6 @@ export const SkillGroups = [
   {
     category: "Frameworks & Libraries",
     items: [
-      { name: ".NET Core MVC", image: "aspnet.svg" },
       { name: "ASP.NET", image: "aspnet.svg" },
       { name: "WinForms", image: "csharp.svg" },
       { name: "React.js", image: "react.svg" },
