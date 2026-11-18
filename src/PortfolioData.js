@@ -29,7 +29,7 @@ export const SkillGroups = [
   {
     category: "Frameworks & Libraries",
     items: [
-      { name: ".NET Core MVC (.NET 8)", image: "aspnet.svg" },
+      { name: ".NET Core MVC", image: "aspnet.svg" },
       { name: "ASP.NET", image: "aspnet.svg" },
       { name: "WinForms", image: "csharp.svg" },
       { name: "React.js", image: "react.svg" },
@@ -44,8 +44,8 @@ export const SkillGroups = [
     category: "Databases & Tools",
     items: [
       { name: "MySQL", image: "mysql.svg" },
-      { name: "MS SQL Server", image: "mysql.svg" },
-      { name: "n8n Automation", image: "n8n.svg" },
+      { name: "SQL Server", image: "mysql.svg" },
+      { name: "n8n", image: "n8n.svg" },
       { name: "Codex", image: "codex.svg" },
       { name: "Git & GitHub", image: "git.svg" },
       { name: "VS Code", image: "vscode.svg" },
