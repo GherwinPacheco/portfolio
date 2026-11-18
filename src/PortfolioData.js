@@ -5,7 +5,7 @@ export const Profile = {
   phone: "+63 945-217-0963",
   email: "gherwinpacheco1@gmail.com",
   summary:
-    "Software Developer with 2+ years of experience maintaining, revising, and troubleshooting existing internal Manufacturing Execution (MES) and Warehouse Management (WMS) systems, operational dashboards, and shop-floor integrations across 19 SMT electronics production lines (C#, .NET, VB.NET, PHP, MySQL, SQL Server). Primarily handles system revision requests from Production Engineers to align software workflows with production process needs, resolves system bugs, optimizes slow SQL queries, and builds n8n workflow automations.",
+    "Software Developer with 2+ years of experience maintaining, revising, and troubleshooting existing internal Manufacturing Execution (MES) and Warehouse Management (WMS) systems, operational dashboards, and shop-floor integrations across 19 SMT electronics production lines (C#, .NET, VB.NET, PHP, MySQL). Primarily handles system revision requests from Production Engineers to align software workflows with production process needs, resolves system bugs, optimizes slow SQL queries, and builds n8n workflow automations.",
   socials: {
     facebook: "https://www.facebook.com/gherwin.pacheco.08/",
     linkedin: "https://www.linkedin.com/in/gherwin-pacheco-4784a4319",
@@ -41,10 +41,9 @@ export const SkillGroups = [
     ],
   },
   {
-    category: "Databases & Tools",
+    category: "Database & Tools",
     items: [
       { name: "MySQL", image: "mysql.svg" },
-      { name: "SQL Server", image: "mysql.svg" },
       { name: "n8n", image: "n8n.svg" },
       { name: "Codex", image: "codex.svg" },
       { name: "Git & GitHub", image: "git.svg" },
@@ -87,7 +86,6 @@ export const Experience = [
       "WinForms",
       "PHP",
       "MySQL",
-      "SQL Server",
       "JavaScript",
       "jQuery",
       "DataTables",
@@ -99,7 +97,7 @@ export const Experience = [
       "Handle and implement system revision requests from Production Engineers to update, enhance, and maintain existing internal MES and WMS applications (C#, VB.NET, PHP, MySQL), aligning SMT traceability, lot tracking, quality inspections, scan validation, and warehouse workflows across 19 production lines.",
       "Troubleshoot, debug, and resolve software bugs identified across internal MES and WMS modules to ensure reliable day-to-day shop-floor and warehouse operations across all 19 production lines.",
       "Maintain operational dashboards and web modules monitoring unit status, line progress, and work-in-progress (WIP) aging metrics, optimizing slow MySQL queries across large production datasets.",
-      "Support existing shop-floor SQL Server line database integrations and automate cross-departmental reporting and production alerting using n8n and scheduled SQL workflows to deliver operational updates and periodic Excel/HTML email reports.",
+      "Automate cross-departmental reporting and production alerting using n8n and scheduled SQL workflows to deliver operational updates and periodic Excel/HTML email reports.",
       "Collaborate with Production Engineers, QA, and warehouse teams to validate system revisions, conduct UAT, update technical documentation and user manuals, and assist with system release deployments.",
     ],
   },
