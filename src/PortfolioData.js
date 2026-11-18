@@ -106,7 +106,7 @@ export const Experience = [
     ],
   },
   {
-    position: "Software Developer Intern",
+    position: "IT Intern",
     company: "Municipality of General Mariano Alvarez",
     location: "Cavite, Philippines",
     techstack: ["React.js", "PHP", "JavaScript", "Tailwind CSS"],
